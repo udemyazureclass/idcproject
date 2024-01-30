@@ -45,13 +45,13 @@ sudo chmod 666 /var/run/docker.sock
 
 sudo docker bulid -t nodeapplication .
 
-docker images docker run -d -p 8080:8080 --name nodeapplication 24a19d8b6e76
+docker images docker run -d -p 8080:8080 --name nodeapplication 24a1234hde76
 
-docker tag 24a19d8b6e76 rahulukey123/santa:latest
+docker tag 24a1234hde76 mydocker/newimage:latest
 
 docker images
 
-docker push sarvesh/nodeapplication:latest
+docker push mydocker/newimage:latest
 
 step 3# Update Amazon EKS cluster using aws eks
 
